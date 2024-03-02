@@ -37,7 +37,7 @@ function saveTasks(value) {
 
 function loadTasks() {
   try {
-    return JSON.parse(localStorage.getItem("tasks"));
+    return JSON.parse(localStorage.getItem("tasks")) || [];
   } catch {
     return [];
   }
